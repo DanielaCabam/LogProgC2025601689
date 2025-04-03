@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="entrada"/>
+        <attribute name="authors" value="Daniela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-02 06:57:37 p. m."/>
+        <attribute name="created" value="RGFuaWVsYTtEQU5JRUxBQ0FCQUxMRVI7MjAyNS0wNC0wMjswNjo0NTowMSBwLiBtLjszMjA5"/>
+        <attribute name="edited" value="RGFuaWVsYTtEQU5JRUxBQ0FCQUxMRVI7MjAyNS0wNC0wMjswNjo1NzozNyBwLiBtLjsyOzMzMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresar la edad del cliente&quot;" newline="True"/>
+            <input variable="edad"/>
+            <if expression="edad &lt;4">
+                <then>
+                    <output expression="&quot;entrada gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad &gt;18">
+                        <then>
+                            <output expression="&quot;entrada $500&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;entrada $200&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
