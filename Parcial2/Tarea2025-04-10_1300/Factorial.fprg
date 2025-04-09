@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial"/>
+        <attribute name="authors" value="Daniela"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 02:49:44 p. m."/>
+        <attribute name="created" value="RGFuaWVsYTtEQU5JRUxBQ0FCQUxMRVI7MjAyNS0wNC0wODswMjowNDozMCBwLiBtLjszMjA4"/>
+        <attribute name="edited" value="RGFuaWVsYTtEQU5JRUxBQ0FCQUxMRVI7MjAyNS0wNC0wODswMjo0OTo0NCBwLiBtLjsxOzMzMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, n, fact" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="1"/>
+            <assign variable="fact" expression="1"/>
+            <output expression="&quot;ingrese un numero&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n&gt;=0">
+                <then>
+                    <while expression="i&lt;=n">
+                        <assign variable="fact" expression="fact*i"/>
+                        <assign variable="i" expression="i+1"/>
+                    </while>
+                </then>
+                <else>
+                    <output expression="&quot;Erro:n debe ser negativo&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
